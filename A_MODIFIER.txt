@@ -1,0 +1,9 @@
+ELEMENTS A REMPLACER AVANT MISE EN LIGNE
+
+1. VOTRE_EMAIL dans index.html
+2. VOTRE_LINKEDIN dans index.html
+3. VOTRE_GITHUB dans index.html
+4. Photos/assets/about.jpg, header.JPG et logos : remplacer par tes propres images si necessaire.
+5. Liens GitHub des projets : remplacer les href="#" lorsque les projets seront realises.
+6. Les images actuelles des projets sont des placeholders herites du portfolio d origine.
+7. Verifier les dates exactes de formation et disponibilite avant publication.

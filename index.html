@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <title>Data Engineer | Raymond Junior Ndjie Ndjie</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav__bar">
+        <a href="#"><span class="logo nav__logo">R</span> Raymond Ndjie</a>
+        <div class="nav__menu__btn" id="menu-btn">
+          <i class="ri-menu-3-line"></i>
+        </div>
+      </div>
+      <ul class="nav__links" id="nav-links">
+        <li><a href="#home">Accueil</a></li>
+        <li><a href="#about">À propos</a></li>
+        <li><a href="#portfolio">Projets</a></li>
+        <li><a href="#technologies">Technologies</a></li>
+        <li><a href="#Parcours">Parcours</a></li>
+
+        <li><a href="#contact" class="btn">Contacts</a></li>
+      </ul>
+      <a href="#contact" class="btn btn__large">Contact</a>
+    </nav>
+    <header class="section__container header__container" id="home">
+      <div class="header__image">
+        <img src="assets\photo pro.jpeg" alt="header" />
+      </div>
+      <div class="header__content">
+        <div>
+          <h1>Raymond Junior<br /> <span class="typing-text"></span> </h1>
+        </div>
+        <p class="section__description">
+          Data Engineer avec 2 ans d’expérience sur des projets de collecte, transformation, fiabilisation et valorisation des données.
+          Je travaille principalement avec Python, SQL, Apache Airflow, dbt et les technologies Data Cloud, avec un intérêt particulier pour les plateformes Data, le traitement distribué et la Business Intelligence.
+        </p>
+
+        <div class="header__btn">
+          <a href="#contact" class="btn">Me contacter</a>
+        </div>
+
+        <div class="contact__socials">
+          <a href="mailto:raymondndjie33@gmail.com" target="_blank"><i class="ri-mail-line"></i></a> 
+          <a href="https://www.linkedin.com/in/ndjie-raymond-cdi-data-engineer/" target="_blank"><i class="ri-linkedin-fill"></i></a>
+          <a href="https://github.com/jembaRay" target="_blank"><i class="ri-github-fill"></i></a> 
+          <a href="#" target="_blank"><i class="ri-global-line"></i></a> 
+          
+        </div>
+      </div>
+    </header>
+
+    <section class="section__container about__container" id="about">
+      <div class="about__image">
+        <img src="assets/bg.png" alt="bg" class="about__bg-1" />
+        <img src="assets/bg.png" alt="bg" class="about__bg-2" />
+        <img src="assets/WhatsApp Image 2026-10-05 at 01.15.36.jpeg" alt="about" class="about__img" />
+      </div>
+      <div class="about__content">
+        <h2 class="section__header">À propos de moi</h2>
+        <p class="section__description">
+          Data Engineer avec une expérience en conception de pipelines ETL/ELT, préparation et transformation des données, automatisation des traitements et mise en place de contrôles de qualité.
+          Chez Exail, j’ai notamment travaillé avec Python, SQL, Apache Airflow et dbt, et contribué à la mise en place d’une base analytique alimentant des indicateurs métiers.
+          Mon objectif est de construire des solutions Data fiables, maintenables et utiles aux équipes métier.
+        </p>
+        <div class="about__btn">
+          <a href="assets/CV_Raymond_Ndjie.pdf" class="btn" download="CV_Raymond_Ndjie.pdf" target="_blank" rel="noopener noreferrer">Télécharger mon CV</a>
+        </div>
+        
+      </div>
+    </section>
+
+
+
+
+
+
+    <section class="portfolio" id="portfolio">
+      <div class="container">
+        <h2 class="section__title">Mes projets Data</h2>
+        <div class="portfolio__intro">
+          <p class="portfolio__description">
+          Une sélection de projets orientés Data Engineering, Cloud, traitement des données et Business Intelligence.
+          Les projets personnels seront documentés progressivement avec leur architecture, leur code source, les choix techniques et les résultats obtenus.
+          </p>
+        </div>
+
+        <div class="portfolio__stats">
+          <div class="stat__card"><div class="stat__number">3</div><div class="stat__label">Expériences Data</div><div class="stat__icon">📁</div></div>
+          <div class="stat__card"><div class="stat__number">15</div><div class="stat__label">Indicateurs métier</div><div class="stat__icon">☁️</div></div>
+          <div class="stat__card"><div class="stat__number">70%+</div><div class="stat__label">Temps de traitement réduit</div><div class="stat__icon">📊</div></div>
+        </div>
+
+        <div class="portfolio__filters">
+          <button class="filter__btn active" data-filter="all">Tous les projets</button>
+          <button class="filter__btn" data-filter="pipeline">Data Engineering</button>
+          <button class="filter__btn" data-filter="analyse">BI / Analytics</button>
+          <button class="filter__btn" data-filter="cloud">Cloud / Big Data</button>
+        </div>
+
+        <div class="portfolio__grid">
+          <div class="portfolio__card" data-category="pipeline">
+            <img src="assets/Projet/Architecture de données Azure & Databricks.png" alt="Data Platform Azure" />
+            <div class="card__overlay">
+              <h3 class="card__title">Data Platform Azure</h3>
+              <p class="card__description">Architecture de données de bout en bout : Azure Data Factory, ADLS, Databricks, PySpark, Delta Lake et Power BI.</p>
+              <a href="https://github.com/jembaRay/Data-Platform-Azure" class="card__link">voir le projet</a>
+            </div>
+          </div>
+
+          <div class="portfolio__card" data-category="pipeline">
+            <img src="assets/Projet/Projet 2 – Architecture Modern Data Stack.png" alt="Modern Data Stack - image à remplacer" />
+            <div class="card__overlay">
+              <h3 class="card__title">Modern Data Stack</h3>
+              <p class="card__description">Pipeline analytique en streaming avec Snowflake, dbt, Airflow et Kafka, jusqu’au reporting et aux indicateurs métier.</p>
+              <a href="https://github.com/jembaRay/Modern-Data-Stack" class="card__link">voir le projet</a>
+            </div>
+          </div>
+
+          <div class="portfolio__card" data-category="cloud">
+            <img src="assets/Projet/Pipeline GCP batch et temps réel.png" alt="GCP Data Platform - image à remplacer" />
+            <div class="card__overlay">
+              <h3 class="card__title">GCP Data Platform</h3>
+              <p class="card__description">Ingestion, orchestration et transformation avec GCS, BigQuery, Airflow, dbt et contrôles de qualité.</p>
+              <a href="https://github.com/jembaRay/GCP-Data-Platform" class="card__link">voir le projet</a>
+            </div>
+          </div>
+
+          <div class="portfolio__card" data-category="cloud">
+            <img src="assets/Projet/Designer.jpg" alt="AWS Data Platform - image à remplacer" />
+            <div class="card__overlay">
+              <h3 class="card__title">AWS Data Platform</h3>
+              <p class="card__description">Pipeline Cloud avec S3, Lambda, Glue et Athena, complété par une couche de reporting.</p>
+              <a href="https://github.com/jembaRay/AWS-Data-Platform" class="card__link">voir le projet</a>
+            </div>
+          </div>
+
+          <div class="portfolio__card" data-category="pipeline">
+            <img src="assets/Projet/Real-Time Data Pipeline.jpg" alt="Real-Time Data Pipeline - image à remplacer" />
+            <div class="card__overlay">
+              <h3 class="card__title">Real-Time Data Pipeline</h3>
+              <p class="card__description">Pipeline temps réel avec Kafka, Spark, Python et Docker, de la collecte des événements à leur exploitation.</p>
+              <a href="https://github.com/jembaRay/Real-Time-Data-Pipeline" class="card__link">voir le projet</a>
+            </div>
+          </div>
+
+          <div class="portfolio__card" data-category="analyse">
+            <img src="assets/Projet/Business Analytics.png" alt="Business Analytics - image à remplacer" />
+            <div class="card__overlay">
+              <h3 class="card__title">Business Analytics</h3>
+              <p class="card__description">Analyse de données avec Python et SQL, modélisation des indicateurs et création d’un dashboard Power BI.</p>
+              <a href="https://github.com/jembaRay/Business-Analytics" class="card__link">voir le projet</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section__container portfolio__container" id="technologies">
+      <h3 class="technologies__title">Technologies maîtrisées</h3>
+      <p class="section__description">Une stack orientée Data Engineering, Cloud, traitement distribué et Business Intelligence.</p>
+      <div class="portfolio__grid2">
+        <div class="portfolio__card2" data-message="Python"><img src="https://logos-world.net/wp-content/uploads/2021/10/Python-Symbol.png" alt="Python" /></div>
+        <div class="portfolio__card2" data-message="SQL"><img src="https://logowik.com/content/uploads/images/azure-sql-database6354.jpg" alt="SQL" /></div>
+        <div class="portfolio__card2" data-message="Apache Airflow"><img src="https://assets.streamlinehq.com/image/private/w_300,h_300,ar_1/f_auto/v1/icons/1/airflow-oqzgxxooekbjiyxdmx7z6.png/airflow-dj209lh3ezbv8120d2b92b.png?_a=DATAg1AAZAA0" alt="Apache Airflow" /></div>
+        <div class="portfolio__card2" data-message="dbt"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzGOvuMEIpPS1EVokKX5TEuAaY6wWw38CSjg&s" alt="dbt" /></div>
+        <div class="portfolio__card2" data-message="Databricks"><img src="https://upload.wikimedia.org/wikipedia/commons/6/63/Databricks_Logo.png" alt="Databricks" /></div>
+        <div class="portfolio__card2" data-message="Apache Spark">
+            <img 
+                src="https://th.bing.com/th/id/OIP.LfflA1fDTABrR70DuZXxFQHaFl?w=239&h=181&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3"
+                alt="Apache Spark"
+            />
+        </div>
+        <div class="portfolio__card2" data-message="Kafka"><img src="https://developers.redhat.com/blog/wp-content/uploads/2018/05/kafka-logo-tall.png" alt="Kafka" /></div>
+        <div class="portfolio__card2" data-message="Snowflake"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmslK3h06O9gwB0aO_u09UTyf7gnTZMAp6jg&s" alt="Snowflake" /></div>
+        <div class="portfolio__card2" data-message="Power BI"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTki2Pd1tgavIzKIifRSRqD_5EMXnvPwL2Tdg&s" alt="Power BI" /></div>
+        <div class="portfolio__card2" data-message="Docker"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJl4fp0SkQbTPU5ZxVl6AKWYuKCwM0gIhNtQ&s" alt="Docker" /></div>
+        <div class="portfolio__card2" data-message="Git / CI-CD"><img src="https://images.icon-icons.com/2415/PNG/512/gitlab_original_wordmark_logo_icon_146504.png" alt="Git" /></div>
+        <div class="portfolio__card2" data-message="GCP / BigQuery"><img src="https://cdn.worldvectorlogo.com/logos/google-cloud-1.svg" alt="GCP" /></div>
+        <div class="portfolio__card2" data-message="Azure"><img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Microsoft_Azure.svg" alt="Azure" /></div>
+        <div class="portfolio__card2" data-message="AWS"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2xQcwKitRgXfqdi34DYlocPSEXD2G2zZipg&s" alt="AWS" /></div>
+      </div>
+    </section>
+
+<section class="section__container parcours__container" id="Parcours">
+      <h2 class="section__header">Mon parcours professionnel</h2>
+      <p class="section__description">
+        Mon parcours combine Data Engineering, analyse de données et développement de solutions orientées métier.
+      </p>
+      <br><br>
+      <div class="timeline">
+        <div class="timeline__item">
+          <div class="timeline__date"><span class="year">2025–2026</span><span class="month">Février – Septembre</span><span class="current">Expérience principale</span></div>
+          <div class="timeline__content"><div class="timeline__card">
+            <div class="timeline__logo"><img src="https://www.exail-technologies.com/wp-content/uploads/2022/10/exail-logo-sq.jpg" alt="Exail - logo à remplacer" /></div>
+            <div class="timeline__details">
+              <h3 class="company">Exail Technologies</h3>
+              <h4 class="position">Data Engineer</h4>
+              <p class="description">Conception et automatisation de pipelines ETL/ELT, préparation et fiabilisation des données et mise en place d’une base analytique pour les usages métier.</p>
+              <ul class="mission-tasks">
+                <li>Développement de pipelines ETL/ELT avec Python et Apache Airflow à partir de plusieurs sources métier.</li>
+                <li>Conception de la première base de données analytique de l’entreprise, avec intégration de 4 sources et alimentation de 15 indicateurs métier.</li>
+                <li>Développement de modèles dbt pour la transformation, la documentation et les tests de qualité des données.</li>
+                <li>Automatisation de traitements de consolidation et de reporting avec Python, avec une réduction de plus de 70 % du temps de traitement.</li>
+                <li>Mise en place de contrôles de qualité, tests d’intégration et règles de validation métier.</li>
+              </ul>
+              <div class="timeline__tags"><span>Python</span><span>SQL</span><span>Airflow</span><span>dbt</span><span>Snowflake</span><span>Data Quality</span><span>ETL/ELT</span><span>Power BI</span></div>
+            </div>
+          </div></div>
+        </div>
+
+        <br><br><br>
+
+        <div class="timeline__item">
+          <div class="timeline__date"><span class="year">2024</span><span class="month">Avril</span><span class="duration">6 mois</span></div>
+          <div class="timeline__content"><div class="timeline__card">
+            <div class="timeline__logo"><img src="assets/School/iaip.png" alt="IAI" /></div>
+            <div class="timeline__details">
+              <h3 class="company">IAI Cameroun</h3>
+              <h4 class="position">Software & Data Analyst</h4>
+              <p class="description">Développement d’un système de détection faciale pour automatiser le suivi de l’assiduité des étudiants et création d’un dashboard destiné aux équipes de suivi.</p>
+              <ul class="mission-tasks">
+                <li>Collecte, préparation et structuration des données pour l’entraînement et l’évaluation du modèle.</li>
+                <li>Intégration du système de détection faciale dans le processus de suivi des présences.</li>
+                <li>Traitement des données pour identifier les étudiants présents et absents.</li>
+                <li>Création d’un dashboard pour le suivi de l’assiduité et des indicateurs.</li>
+              </ul>
+              <div class="timeline__tags"><span>Python</span><span>Computer Vision</span><span>Data Analysis</span><span>Power BI</span><span>SQL</span></div>
+            </div>
+          </div></div>
+        </div>
+
+        <br><br><br>
+
+        <div class="timeline__item">
+          <div class="timeline__date"><span class="year">2023</span><span class="month">Avril</span><span class="duration">6 mois</span></div>
+          <div class="timeline__content"><div class="timeline__card">
+            <div class="timeline__logo"><img src="https://tse4.mm.bing.net/th/id/OIP.edN13_MsMoEBkOfxwC_oUAAAAA?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="ANTIC - logo à remplacer" /></div>
+            <div class="timeline__details">
+              <h3 class="company">ANTIC</h3>
+              <h4 class="position">IoT & Data Analyst — Stage</h4>
+              <p class="description">Collecte et analyse de données IoT issues d’un groupe électrogène afin de suivre les performances du système et détecter les anomalies.</p>
+              <ul class="mission-tasks">
+                <li>Collecte et préparation des données issues des équipements IoT.</li>
+                <li>Analyse des données de fonctionnement et suivi des indicateurs.</li>
+                <li>Création d’un dashboard de monitoring.</li>
+                <li>Détection d’anomalies et mise en place d’alertes sur les paramètres critiques.</li>
+              </ul>
+              <div class="timeline__tags"><span>Python</span><span>IoT</span><span>Data Analysis</span><span>Dashboard</span><span>KPI</span></div>
+            </div>
+          </div></div>
+        </div>
+      </div>
+    </section>
+
+<section class="section__container portfolio__container" id="formation">
+      <h2 class="section__header">Formation</h2>
+      <p class="section__description">
+        Formation orientée Data, Intelligence Artificielle et systèmes logiciels.
+      </p>
+      <div class="portfolio__grid2">
+        <div class="portfolio__card2"><img src="assets/School/ECE_LOGO.png" alt="Nexa Digital School - logo à remplacer" /></div>
+        <div class="portfolio__card2"><img src="https://www.eureka-education.fr/wp-content/uploads/2024/11/LOGO-NEXA-VF_LOGO-NEXA-LONG_COULEURS.png" alt="ECE Paris - logo à remplacer" /></div>
+        <div class="portfolio__card2"><img src="assets/School/iaip.png" alt="IAI - logo à remplacer" /></div>
+      </div>
+ 
+    </section>
+    
+<!-- <section class="section__container portfolio__container" id="certifications">
+      <h2 class="section__header">Certifications</h2>
+      <p class="section__description">Je suis passionné par mon métier et je m'efforce constamment d'approfondir mes connaissances. Ces certifications sont le reflet de mon parcours d'apprentissage et de mon désir de me perfectionner.</p>
+      <div class="portfolio__grid2">
+        <div class="portfolio__card2"><div style="padding:1rem;text-align:center;"><strong>Power BI Data Analyst Associate</strong><br><small>PL-300</small></div></div>
+        <div class="portfolio__card2"><div style="padding:1rem;text-align:center;"><strong>AWS Academy Graduate</strong></div></div>
+        <div class="portfolio__card2"><div style="padding:1rem;text-align:center;"><strong>MongoDB Certificate</strong></div></div>
+        <div class="portfolio__card2"><div style="padding:1rem;text-align:center;"><strong>Data Science Certificate</strong></div></div>
+      </div>
+    </section> -->
+
+<section class="section__container contact__container" id="contact">
+      <div class="logo">R</div>
+      <h2 class="section__header">Échangeons ensemble !</h2>
+      <p class="section__description">
+        Je suis actuellement à la recherche d’opportunités en Data Engineering, Data Analytics et Cloud Data. N’hésitez pas à me contacter pour échanger sur un projet ou une opportunité.
+      </p>
+      <div class="contact__socials">
+        <a href="mailto:VOTRE_EMAIL" target="_blank"><i class="ri-mail-line"></i></a>
+        <a href="VOTRE_LINKEDIN" target="_blank"><i class="ri-linkedin-fill"></i></a>
+        <a href="VOTRE_GITHUB" target="_blank"><i class="ri-github-fill"></i></a>
+      </div>
+    </section>
+
+
+
+    <footer class="footer">© 2026 Raymond Junior Ndjie Ndjie — Data Engineer</footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="main.js"></script>
+  
+
+  </body>
+</html>
